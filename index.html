@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>таймер і світлофор</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 30px;
+        }
+
+        button {
+            padding: 10px 25px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        #countdown {
+            font-size: 40px;
+            margin: 20px;
+        }
+
+        .traffic-light {
+            width: 100px;
+            background: #333;
+            padding: 15px;
+            border-radius: 15px;
+            margin: 20px auto;
+        }
+
+        .circle {
+            width: 65px;
+            height: 65px;
+            border-radius: 50%;
+            background: #777;
+            margin: 10px auto;
+        }
+
+        .red.active {
+            background: red;
+        }
+
+        .yellow.active {
+            background: yellow;
+        }
+
+        .green.active {
+            background: lime;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>1. зворотний відлік</h1>
+
+    <button id="startBtn">старт</button>
+
+    <div id="countdown">натисніть старт</div>
+
+    <hr>
+
+    <h1>2. світлофор</h1>
+
+    <div class="traffic-light">
+        <div class="circle red"></div>
+        <div class="circle yellow"></div>
+        <div class="circle green"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
